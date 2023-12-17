@@ -1,0 +1,151 @@
+.video-grid {
+  display: grid;
+  column-gap: 15px;
+  row-gap: 30px;
+  padding: 20px;
+}
+
+@media (max-width: 869px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 869px) and (max-width:1168px){
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1169px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.thumbnail {
+  /* width: 300px; */
+  /* grid ki wajah se hata diya*/
+  width: 100%;
+}
+
+/* .video-card {
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+} */
+/* grid ki wajah se hata diya*/
+
+.thumbnail-row {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.video-time {
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+  padding: 4px 4px;
+  border-radius: 2px;
+  font-family: roboto, arial;
+  font-weight: 500;
+}
+
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.channel-pic {
+  height: 36px;
+  position: relative;
+}
+
+.hover-shit-lll {
+  width: 36px;
+  height: 36px;
+  border-radius: 25px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.channel-profile-lll {
+  width: 55px;
+  /* background-color: aqua; */
+  padding: 8px;
+}
+
+.icon-lll {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+.hover-container-lll {
+  z-index: 300;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: row;
+  width: 250px;
+  border-width: 2px;
+  border-radius: 4px;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  background-color: white;
+  position: absolute;
+  left: 5px;
+  bottom: -90px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.channel-pic:hover .hover-container-lll {
+  opacity: 1;
+}
+
+.content-lll {
+  padding-left: 3px;
+  flex: 1;
+}
+
+.channel-name-lll {
+  font-weight: bold;
+}
+
+.sub-count {
+  color: #606060;
+  font-size: 14px;
+  margin-top: 4px;
+  font-weight: 400;
+}
+
+.channel-icon {
+  width: 36px; /* will take up entire space in that div */
+  border-radius: 50px;
+}
+
+.video-title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.video-author {
+  margin: 0;
+  margin-top: 9px;
+  font-size: 12px;
+  color: #606060;
+}
+
+.video-stats {
+  margin: 0;
+  margin-top: 4px;
+  font-size: 12px;
+  color: #606060;
+}
